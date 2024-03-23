@@ -9,48 +9,61 @@
 
 <body>
     <form>
+        <!-- inicio do formulário  -->
         <label for="txtNome">Nome:</label>
+        <!-- inicia a função e vincula a celula disponviel  -->
         <input id="txtNome" type="text" placeholder="Insira nome completo">
+        <!-- insere um id para qualificar o campo, type text para escrever, 
+        placeholder para inserir uma informação na célula -->
         <br><br>
         <!-- notação de palavras na progamação camel case  -->
         <label for="txtSenha">Senha:</label>
         <input id="txtSenha" type="password" placeholder=" de 5 a 8 carecteres">
         <br><br>
-
+        <!-- bloco similar -->
         <label for="txtDataNasc">Data de Nascimento</label>
         <input id="txtdDataNasc" type="date">
         <br><br>
+        <!-- bloco similar  -->
         <label for="txtNro">Número da Casa:</label>
-        <input id="txNro" type="Number" min="2"  max="1998">
+        <input id="txNro" type="Number" min="2" max="1998">
         <br><br>
 
         <fieldset>
-
-            
+            <!-- cria um quadro para juntar as células  -->
             <legend>Contato</legend>
-           <label for="txtEmail">Email</label>
-            <input id="txtEmai" type="email" placeholder="http://www.exemplo.com.br">
+            <!-- cria uma nota no quadro  -->
+            <label for="txtEmail">Email:</label>
+            <input id="txtEmail" type="email" placeholder="http://www.exemplo.com.br">
+            <!-- placeholder , cria uma nota dentro do campo adicionado -->
             <br><br>
             <label for="txtSite">Site:</label>
             <input id="txtSite" type="url" placeholder="endereço Site">
-            
+
         </fieldset>
         <br>
 
         <label for="txtEstado">Estado</label>
-        <select id="txtEstado"> 
-            <option >MG</option>
-            <option >RJ</option>
-            <option >SP</option>
+        <!-- criando um seletor para estados -->
+        <select id="txtEstado">
+            <!-- cria um seletor com opções no quadro -->
+            <option>MG</option>
+            <option>RJ</option>
+            <option>SP</option>
+            <!-- option, cria as opçoes necessárias -->
         </select>
         <br>
-            <label for="">Sexo:</label>
-            <br>
+        <label for="">Sexo:</label>
+        <br>
+        <!-- criando opções para selecionar o sexo, lembrando : primeiro o campo depois o rotulo -->
         <input type="radio" id="masculino" name="sexo">
         <label for="masculino">Masculino</label>
+        <!-- Primeira parte  -->
         <input type="radio" id="feminino" name="sexo">
         <label for="feminino">Feminino</label>
+        <!-- Segunda parte -->
         <br><br>
+        <!-- criando caixas de seleção, lembrete: primeiro a caixa depois o rotulo -->
         <label for="">Linguagem</label>
         <br>
         <input type="checkbox" id="java">
