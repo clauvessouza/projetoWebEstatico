@@ -22,11 +22,11 @@
         <br><br>
         <!-- bloco similar -->
         <label for="txtDataNasc">Data de Nascimento</label>
-        <input id="txtdDataNasc" type="date">
+        <input id="txtDataNasc" type="date">
         <br><br>
         <!-- bloco similar  -->
         <label for="txtNro">Número da Casa:</label>
-        <input id="txNro" type="Number" min="2" max="1998">
+        <input id="txNro" type="Number" min="0" max="1998" step="2">
         <br><br>
 
         <fieldset>
@@ -34,12 +34,12 @@
             <legend>Contato</legend>
             <!-- cria uma nota no quadro  -->
             <label for="txtEmail">Email:</label>
-            <input id="txtEmail" type="email" placeholder="http://www.exemplo.com.br">
-            <!-- placeholder , cria uma nota dentro do campo adicionado -->
+            <input id="txtEmail" type="email" placeholder="http://www.exemplo.com.br" required>
+            <!-- placeholder , cria uma nota dentro do campo adicionado atençao para o uso do "required" -->
             <br><br>
             <label for="txtSite">Site:</label>
             <input id="txtSite" type="url" placeholder="endereço Site">
-
+                <!-- utilizar o url, no type  -->
         </fieldset>
         <br>
 
@@ -55,6 +55,7 @@
         <br>
         <label for="">Sexo:</label>
         <br>
+        <!-- ATENÇAO: CRIANDO LOCAIS PARA SELECIONAR COMO SEXO, CRIA PRIMEIRO O INPUT DEPOIS O LABEL  -->
         <!-- criando opções para selecionar o sexo, lembrando : primeiro o campo depois o rotulo -->
         <input type="radio" id="masculino" name="sexo">
         <label for="masculino">Masculino</label>
@@ -76,6 +77,9 @@
         <label for="c++">C++</label>
         <br><br>
         <input type="text">
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
 
 
 
