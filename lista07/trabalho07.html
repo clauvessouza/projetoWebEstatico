@@ -9,32 +9,32 @@
 
 <body>
     <h2 style="color:blue"> <u>Formulário de Cadastro</u></h2>
-    <form action="">
+    <form>
     <fieldset>
         <legend style="color:blue"><b>Dados</b></legend>
-        <label for="txtNme"> <b>Nome:</b></label>
-        <input type="texto"  id="txtNome" name="" placeholder=" Digite o seu nome" required>
+        <label for="txtNome"> <b>Nome:</b></label>
+        <input type="text"  id="txtNome" name="txtNme" placeholder=" Digite o seu nome">
         <br><br>
         <label for="txtDataNasc"> <b>Data de nascimento:</b></label>
-        <input type="date" id="txtdatanasc" name=""placeholder=" Data Nascimento" riquired >
+        <input type="date" id="txtDataNasc" name="txtDatNasc">
         <br><br>
-        <label for=""><b>Sexo:</b></label>
+        <label id="txtsexo"><b>Sexo:</b></label>
         <br>
         <input type="radio" id="Masculino" name="Sexo">
-        <label for="txtMasculino">Masculino</label>
+        <label for="Masculino">Masculino</label>
         <br>
         <input type="radio" id="Feminino" name="Sexo">
-        <label for="txtFeminino">Feminino</label>
+        <label for="Feminino">Feminino</label>
     </fieldset>
         <br>
 
         <fieldset>
             <legend style="color:blue"><b>Contatos</b></legend>
             <label for="txtemail"><b>Email</b></label>
-            <input type="email" id="txtemail" name="" placeholder="Digite seu email" required>
+            <input type="email" id="txtemail" name="txtemail" placeholder="Digite seu email" required>
             <br><br>
             <label for="txttelef"><b>Telefone</b></label>
-            <input type="telefone" id="txttelef" name= "" placeholder="Digite seu telefone" required>
+            <input type="number" id="txttelef" name= "txttelef" placeholder="Digite seu telefone" required>
             <br><br>
             <label for="txtwebSite"><b>Website</b></label>
             <input id="txtwebSite" type="url" placeholder="Digite seu website" required>
@@ -47,19 +47,19 @@
         <input type="text" id="txtend" name="txtend" placeholder="Digite o endereço" required>
         <br><br>
         <label for="txtnro"><b>Número:</b></label>
-        <input type="number" id="txtnro" min="1" max="" step="1" placeholder="Digite numero" riquired>
+        <input type="number" id="txtnro" min="1" max="9999" step="1" placeholder="Digite numero">
         <label for="txtcmp"><b>Complemento:</b></label>
         <input type="text" id="txtcmp" name="txtcmp" placeholder="Indique">
         <br><br>
         <label for="txtcid"><b>Cidade:</b></label>
-        <select name="" id="txtcid">
+        <select id="txtcid">
             <option value="txtcid">Uberlândia</option>
             <option value="txtcid">Uberaba</option>
             <option value="txtcid">Araguari</option>
             <option value="txtcid">Tupaciguara</option>
         </select>
         <label for="txtestado"><b>Estado:</b></label>
-        <select name="" id="txtestado">
+        <select id="txtestado">
             <option value="txtestado">MG</option>
             <option value="txtestado">SP</option>
             <option value="txtestado">RJ</option>
