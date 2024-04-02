@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,67 +8,92 @@
 </head>
 
 <body>
-    <h2 style="color:blue"> <u>Formulário de Cadastro</u></h2>
+    <h1 style="color:blue"> Cadastro de Clientes</h1>
+    <p style="color:red">“Todos os campos são de preenchimento obrigatório”</p>
     <form>
-    <fieldset>
-        <legend style="color:blue"><b>Dados</b></legend>
-        <label for="txtNome"> <b>Nome:</b></label>
-        <input type="text"  id="txtNome" name="txtNme" placeholder=" Digite o seu nome">
-        <br><br>
-        <label for="txtDataNasc"> <b>Data de nascimento:</b></label>
-        <input type="date" id="txtDataNasc" name="txtDatNasc">
-        <br><br>
-        <label id="txtsexo"><b>Sexo:</b></label>
-        <br>
-        <input type="radio" id="Masculino" name="Sexo">
-        <label for="Masculino">Masculino</label>
-        <br>
-        <input type="radio" id="Feminino" name="Sexo">
-        <label for="Feminino">Feminino</label>
-    </fieldset>
+        <fieldset>
+            <legend style="color:blue"><b>Dados pessoais</b></legend>
+            <label for="txtNome"> <b>Nome:</b></label>
+            <input type="text" id="txtNome" name="txtNme" placeholder=" Digite o seu nome" required>
+            <br><br>
+            <label for="txtDataNasc"> <b>Data de nascimento:</b></label>
+            <input type="date" id="txtDataNasc" name="txtDatNasc" required>
+            <br><br>
+            <label id="txtsexo"><b>Sexo:</b></label>
+            <br>
+            <input type="radio" id="Masculino" name="Sexo" required>
+            <label for="Masculino">Masculino</label>
+            <br>
+            <input type="radio" id="Feminino" name="Sexo" required>
+            <label for="Feminino">Feminino</label>
+        </fieldset>
         <br>
 
         <fieldset>
-            <legend style="color:blue"><b>Contatos</b></legend>
+            <legend style="color:blue"><b>Informações de Contatos</b></legend>
             <label for="txtemail"><b>Email</b></label>
             <input type="email" id="txtemail" name="txtemail" placeholder="Digite seu email" required>
             <br><br>
             <label for="txttelef"><b>Telefone</b></label>
-            <input type="number" id="txttelef" name= "txttelef" placeholder="Digite seu telefone" required>
+            <input type="tel" id="txttelef" name="txttelef" maxlength="9" placeholder="Digite seu telefone" required>
             <br><br>
             <label for="txtwebSite"><b>Website</b></label>
             <input id="txtwebSite" type="url" placeholder="Digite seu website" required>
-            
+
         </fieldset>
         <br>
         <fieldset>
             <legend style="color:blue"><b>Localização</b></legend>
-        <label for="txtend"><b>Endereço:</b></label>
-        <input type="text" id="txtend" name="txtend" placeholder="Digite o endereço" required>
-        <br><br>
-        <label for="txtnro"><b>Número:</b></label>
-        <input type="number" id="txtnro" min="1" max="9999" step="1" placeholder="Digite numero">
-        <label for="txtcmp"><b>Complemento:</b></label>
-        <input type="text" id="txtcmp" name="txtcmp" placeholder="Indique">
-        <br><br>
-        <label for="txtcid"><b>Cidade:</b></label>
-        <select id="txtcid">
-            <option value="txtcid">Uberlândia</option>
-            <option value="txtcid">Uberaba</option>
-            <option value="txtcid">Araguari</option>
-            <option value="txtcid">Tupaciguara</option>
-        </select>
-        <label for="txtestado"><b>Estado:</b></label>
-        <select id="txtestado">
-            <option value="txtestado">MG</option>
-            <option value="txtestado">SP</option>
-            <option value="txtestado">RJ</option>
-            <option value="txtestado">GO</option>
-        </select>
-    </fieldset>
-    <br>
-    <input style="color:green" type="submit" value="Cadastrar">
-    <input style="color:red" type="reset"  value="Limpar">
+            <label for="txtend"><b>Endereço:</b></label>
+            <input type="text" id="txtend" name="txtend" placeholder="Digite o endereço" required>
+            <br><br>
+            <label for="txtnro"><b>Número:</b></label>
+            <input type="number" id="txtnro" min="1" max="9999" step="1" placeholder="Digite numero" required>
+            <label for="txtcmp"><b>Complemento:</b></label>
+            <input type="text" id="txtcmp" name="txtcmp" placeholder="Indique">
+            <br><br>
+            <label for="txtcid"><b>Cidade:</b></label>
+            <select id="txtcid">
+                <option value="txtcid">Uberlândia</option>
+                <option value="txtcid">Uberaba</option>
+                <option value="txtcid">Araguari</option>
+                <option value="txtcid">Tupaciguara</option>
+            </select>
+            <label for="txtestado"><b>Estado:</b></label>
+            <select id="txtestado">
+                <option value="txtestado">AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+
+            </select>
+        </fieldset>
+        <br>
+        <input style="color:green" type="submit" value="Cadastrar">
+        <input style="color:red" type="reset" value="Limpar">
 
 
     </form>
