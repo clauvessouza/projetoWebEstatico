@@ -1,0 +1,46 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+ul {
+    border:1px solid black;
+    list-style: none;
+    padding:0px;
+    background-color: black;
+    text-align:center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    padding:20px;
+    display:inline-block;
+    padding-top:40px;
+    border-bottom:3px solid black;    
+}
+.opcaoMenu {
+    background-repeat: no-repeat;
+    background-position: center 5px;
+
+}
+.opcaoMenuFace {
+    background-image: url("../imagens/faceBlack.png");
+}
+.opcaoMenuInsta {
+    background-image: url("../imagens/instaBlack.png");
+}
+.opcaoMenuFace:hover {
+    color: blue;
+    background-image: url("../imagens/face.png");
+    border-bottom: 3px solid blue;
+}
+.opcaoMenuInsta:hover {
+    color:orange;
+    background-image: url("../imagens/insta.png");
+    border-bottom: 3px solid orange;
+}

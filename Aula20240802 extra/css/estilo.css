@@ -1,0 +1,80 @@
+*{
+     border: 0px;
+     padding: 0px;
+}
+ul{
+    /* configura a caixa da lista */
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    text-align: center;
+}
+ul li{
+/* coloca a lista na horizontal */
+/* precisa puxar o ul e li */
+display: inline-block;
+}
+/* agora configura os links */
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    padding-top: 40px;
+    border-bottom: 3px solid black;
+}   
+/* definir o menu e sua partes */
+/* atenção utilizar os dois pontos para puxar a imagem */
+.confMenu{
+    background-repeat: no-repeat;
+    background-position: center 5px;
+}
+.confMenuFace{
+    background-image: url("../imagens/faceBlack.png");
+}
+
+.confMenuInst{
+    background-image: url("../imagens/instaBlack.png");
+}
+
+.confMenuGooM{
+    background-image: url("../imagens/mapsBlack.png");
+}
+
+.confMenuTwit{
+    background-image: url("../imagens/twitterBlack.png");
+}
+
+.confMenuYou{
+    background-image: url("../imagens/youtubeBlack.png");
+}
+.confMenuFace:hover{
+    color: blue;
+   background-image: url("../imagens/face.png");
+   border-bottom: 3px solid blue;
+   }
+
+   .confMenuInst:hover{
+    color:orange;
+   background-image: url("../imagens/insta.png");
+   border-bottom: 3px solid blue;
+   }
+
+   .confMenuGooM:hover{
+    color:white;
+   background-image: url("../imagens/maps.png");
+   border-bottom: 3px solid blue;
+   }
+
+   .confMenuTwit:hover{
+    color:green;
+   background-image: url("../imagens/twitter.png");
+   border-bottom: 3px solid blue;
+   }
+
+.confMenuYou:hover{
+    color:red;
+   background-image: url("../imagens/youtube.png");
+   border-bottom: 3px solid blue;
+   }
