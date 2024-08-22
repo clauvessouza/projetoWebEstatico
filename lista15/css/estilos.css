@@ -1,0 +1,56 @@
+
+* {
+    padding:0px;
+    margin:0px;
+}
+
+ul{
+    top: 100px;
+    position: fixed;
+    left: -120px ;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+li{
+    width: 100px;
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    margin: 25px;
+    border-right: 10px solid black;
+    
+}
+li:hover{
+    transform: translateX(50px);
+    width: 100px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.Opção1{
+background-color: blue;
+}
+
+.Opção2{
+background-color: yellow;
+}
+
+.Opção3{
+ background-color: pink;
+}
+
+
+.Opção4{
+ background-color: lightgreen;
+}
+
+.Opção5{
+background-color: rgba(226, 102, 226, 0.979);
+}
+

@@ -1,0 +1,25 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    margin-top: 60px;
+}
+.caixa{
+    border: 1px solid black;
+    border-bottom: 10px solid black;
+    background-color: rgba(222, 140, 156,0.7);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    /* indica posicionamento da div */
+    top: -35px;   
+    /* indica as coordenadas de posicionamento no eixo como por exemplo estar encima o embaixo*/
+    left: 0px;
+/*  indica o posicionamento na esquerda ou direita */
+transition: all 1s;
+}
+.caixa:hover{
+    top: 0px;
+}
