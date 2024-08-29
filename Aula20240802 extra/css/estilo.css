@@ -5,7 +5,8 @@
 ul{
     /* configura a caixa da lista */
     border: 1px solid black;
-    list-style-type: none;
+    list-style-type:none;
+    /* utiliza marcadores para a lista, neste esta sem marcadores: none */
     padding: 0px;
     background-color: black;
     text-align: center;
@@ -14,15 +15,20 @@ ul li{
 /* coloca a lista na horizontal */
 /* precisa puxar o ul e li */
 display: inline-block;
+/*  coloca a lista horizontalmente, lado a lado */
 }
 /* agora configura os links */
 a:link, a:visited {
     text-decoration: none;
     color: white;
     padding: 20px;
+    /*  neste caso o padding foi utilizado para distanciar os icones */
     display: inline-block;
+    /* coloca a lista no mesma borda total */
+    
     padding-top: 40px;
-    border-bottom: 3px solid black;
+    /*  neste caso padding trata da distancia entre  */
+    border-bottom: 3px solid white;
 }   
 /* definir o menu e sua partes */
 /* atenção utilizar os dois pontos para puxar a imagem */
