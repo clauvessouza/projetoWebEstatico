@@ -1,0 +1,18 @@
+/* configuração global */
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+/* configuraçoes para celular */
+p{
+    font-size: 20px;
+    color: red;
+
+}
+/* configurações para o desktop */
+@media screen and (min-width:1024px){
+    p{
+        font-size: 30px;
+        color: blue;
+    }
+}   

@@ -1,0 +1,31 @@
+/* configuração global */
+*{margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    /* configuraçoes para celular */
+        .container{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        .container > div{
+            border: 2px solid red;
+            width: 100%;
+            text-align: center;
+            background-color: blue;
+            
+
+        }
+    
+    /* configurações para o desktop */
+    @media screen and (min-width:1024px){
+        .container{
+            flex-direction: row;
+        }
+        .container> div{
+            background-color: yellow;
+        }
+    }   
+    @media screen and (min-width:768)
+    
