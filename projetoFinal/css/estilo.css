@@ -6,58 +6,66 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #F47E20; /* Fundo laranja inspirado no traje de Naruto */
-    color: #FFFFFF;
+    /* defeni a todo body com mesmo padrão */
+    background-color: RGB(244,126,32); 
+    /* Fundo laranja inspirado no traje de Naruto */
+    color: RGB(255, 255, 255);
+    /* Aqui defini a cor branca  */
 }
 
 main {
     padding-top: 100px; /* Ajusta o valor conforme a altura do header */
 }
 
-/* Header */
 header {
-    background-color: #000000; /* Fundo preto */
+
+    background-color: RGB(0,0,0); /* Fundo preto */
     display: flex;
+    /* no CSS é usada para ativar o Flexbox, um modelo de layout que facilita o alinhamento e a distribuição de elementos dentro de um contêiner. */
+    
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     position: fixed;
-    top: 0;
+    margin-top: 0px;
     width: 100%;
-    z-index: 1000; /* Para garantir que o header esteja sempre acima do conteúdo */
-    box-shadow: rgb(236, 109, 4) 0 0 10px; /* Sombra branca no header */
+    
+    
 }
 
 header img {
     width: 10%;
 }
 
-/* Menu */
+
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+   margin: 20px;
+   
+   /*  pode ser utilizado o gap para criar espaço entre os itens */
 }
 
 .menu li a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 20px 15px;
     border-radius: 10px; /* Bordas arredondadas */
     transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
 }
 
 .menu li a:hover {
-    background-color: #fd0505; /* Cor de fundo no hover */
-    color: #000000; /* Cor do texto ao hover */
-    border-bottom: 3px solid rgb(0, 0, 235); /* Borda inferior vermelha */
+    background-color: RED; /* Cor de fundo no hover */
+    color: black; /* Cor do texto ao hover */
+    border-bottom: 3px solid rgb(0, 0, 235); 
+    /* Borda embaixo na cor vermelha */
 }
 
-/* Seções gerais */
+
 section {
-    padding: 20px 0;
+    padding: 20px;
     
 }
 
@@ -66,7 +74,7 @@ section > div {
     margin: auto;
 }
 
-/* Banner */
+
 .banner{
     background-image: url( '../img/Capa_secao1.jpg' );
     background-repeat: no-repeat;
@@ -76,23 +84,25 @@ section > div {
     display: flex;
     justify-content: start;
     align-items: end;
-    border-bottom: 2px solid #fd8f00;
+    border-bottom: 2px solid orange;
+   
 }
 
 .banner > div {
     width: 50%; /* Tamanho reduzido da div para 50% */
-    background-color: #010105d3; /* Fundo preto no banner */
+    background-color: black; /* Fundo preto no banner */
     padding: 20px;
     border-radius: 10px; /* Pode manter para estética */
     text-align: center;
     margin: 0 auto;
+    border: 2px solid black;
 }
 
 .banner p {
-    font-size: 20px;
+    font-size: 30px;
 }
 
-/* História */
+
 
 .historia{
     background-color: rgb(10, 5, 83);
@@ -145,7 +155,7 @@ section > div {
 
 .historia ul li span {
     font-weight: bold;
-    color: rgb(255, 115, 0) /* Destaque em amarelo */
+    color: rgb(255, 115, 0) 
 }
 
 /* Seção Hokages */
@@ -162,8 +172,8 @@ section > div {
 
 .hokages .container > div {
     height: 100%;
-    border: #000000 solid 5px;
-    box-shadow: #000000 0 10px 20px;
+    border: black solid 5px;
+    box-shadow: rgb(0,0,0) 0 10px 20px;
     background-color: #FAF6EB;
     color: #000000;
     width: calc(33% - 20px);
@@ -221,13 +231,19 @@ footer p {
     padding: 50px 5px;
 }
 #kunai:hover {
+    /* # localiza o id para efetuar os comando sugeridos */
     transform: rotate(360deg);
-    transition: transform 0.5s;
+    /* movimenta a imagem no eixo x; 
+    ou pode movimentar no eixo y*/
+    transition: transform 0.3s;
+    /* controla a velocidade do movimento */
 }
 
 #jiraya:hover {
-    transform: translateY(-10px);
+    transform: translatex(-10px);
     transition: transform 0.5s;
+     
+    
 }
 
 /* --------------- Akatsuki ----------------  */
@@ -235,30 +251,26 @@ footer p {
 
 /* Estilos específicos para a página Akatsuki */
 .akatsuki {
-    background-color: #ffffff; /* Fundo escuro para a seção Akatsuki */
-    padding: 0 0 40px 0;
+    background-color: white; 
+    /* Fundo escuro para a seção Akatsuki */
+    padding: 40px;
 }
 
 .akatsuki>div>div {
-    border-top: #f10a0a 2px dashed;
-    padding: 10px;
+padding: 10px;
 }
 
 .akatsuki img {
     width: 100%;
     border-radius: 10px;
-    filter: grayscale(100%); /* Imagem em escala de cinza */
-    transition: all 0.3s;
+    
 }
 
-.akatsuki img:hover {
-    filter: grayscale(0); /* Remove a escala de cinza ao passar o mouse */
-}
 
 .akatsuki h2 {
     text-align: center;
     font-size: 36px;
-    color: #ff0000; 
+    color: red; 
     margin-top: 20px;
 
 }
@@ -267,11 +279,11 @@ footer p {
     padding: 0 0 5px 25px;
     text-align: center;
     font-size: 25px;
-    color: #e60b0b;
+    color: rgb(230,11,11);
     margin-top: 20px;
 }
 .akatsuki p {
-    color: #000000;
+    color:black;
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
@@ -280,7 +292,7 @@ footer p {
 
 /* Estilos para a seção de integrantes da Akatsuki */
 .integrantesAkatsuki {
-background-color: #000000;
+background-color: black;
     padding: 40px 0;
 }
 
@@ -293,10 +305,11 @@ background-color: #000000;
 }
 
 .integrantesAkatsuki h2 {
-    background-color: #791e1ef5;
+    background-color: RGB(121, 30 ,31);
     text-align: center;
     font-size: 34px;
-    color: #FFFFFF; /* Cor dourada */
+    color: GOLD;
+    /* Cor dourada */
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -308,56 +321,52 @@ background-color: #000000;
     padding: 0 20px;
 }
 
-
-
 .personagem {
-    background-color: #ffffff; /* Fundo preto para cada personagem */
-    color: #070505;
-    border: 2px solid #ff0000; /* Borda dourada */
+    background-color:white; 
+    color: black;
+    border: 2px solid red; 
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-    width: calc(33% - 40px); /* 3 cards por linha */
+    width: calc(33% - 40px);
+     /* 3 cards por linha */
+    /* opção para distribuir as imagens tipo cartão */
     display: inline-block;
     vertical-align: top;
+    /*memoria de utilização:Organiza os itens no topo da div */
     text-align: center;
     transition: transform 0.3s;
 }
 
 .personagem img {
-    width: 120px;
+    width: 220px;
     margin-bottom: 10px;
     
 }
 
 .personagem h3 {
     font-size: 24px;
-    color: #830905;
+    color: RGB(121,30,31);
 }
 
 .personagem b{
-    color:#64090E ;
-    border-bottom: #64090E 2px solid;
+    color:RGB(105, 4,) ;
+    border-bottom: RGB(100, 9 , 14) 2px solid;
 }
 
 .personagem p {
     font-size: 16px;
-    text-align: justify;
+    text-align: justify;    
     margin-bottom: 10px;
 }
-
-.personagem:hover {
-    transform:perspective(1000px) rotateY(10deg);
-}
-
 
 /* ---------------- ninja---------------- */
 /* Estilos para seções relacionadas a "Como Se Tornar um Ninja" */
 
 /* Seção de treinamento ninja */
 .ninjaTreinamento {
-    background-color: #4f73e9;
-    color: #ffffff;
+    background-color: RGB(79, 115, 233);
+    color: RGB (255, 255, 255);
     padding: 40px 0;
     text-align: center;
 }
@@ -365,7 +374,7 @@ background-color: #000000;
 .ninjaTreinamento h2 {
     font-size: 32px;
     padding-bottom: 20px;
-    color: #ffffff;
+    color: RGB (255, 255, 255);
 }
 
 .ninjaTreinamento > div > div {
@@ -390,7 +399,7 @@ background-color: #000000;
 /* Seção Bandana */
 .ninjaBandana {
     background-color: #0d2e75;
-    color: #ffffff;
+    color: RGB (255, 255, 255);
     padding: 40px 0;
 }
 
@@ -416,20 +425,20 @@ background-color: #000000;
 
 .ninjaBandana h3, .ninjaTreinamento h3, .ninjaJutsus h3  {
     font-size: 23px;
-    color: #f7f5f4;
+    color: RGB(247, 245, 244);
 }
 
 /* Seção de aldeias */
 .aldeias {
     background-color: #1b1b4a;
     padding: 40px 0;
-    color: #ffffff;
+    color: RGB(255, 255, 255);
 }
 
 .aldeias h2 {
     text-align: center;
     font-size: 32px;
-    color: #ffd700;
+    color: yellow;
     margin-bottom: 20px;
 }
 
@@ -444,12 +453,12 @@ background-color: #000000;
 }
 
 .aldeias > div > div:nth-child(odd) {
-    background-color: #32325d;
+    background-color: RGB(50,50,93);
     flex-direction: row-reverse;
 }
 
 .aldeias > div > div:nth-child(even) {
-    background-color: #696867;
+    background-color:  RGB(105, 104, 103);
 }
 
 .aldeias img {
@@ -459,7 +468,7 @@ background-color: #000000;
 
 .aldeias h3 {
     font-size: 24px;
-    color: #ffd700;
+    color: yellow;
     text-align: center;
 }
 
@@ -470,14 +479,14 @@ background-color: #000000;
 
 /* Estilos específicos para a última seção "Jutsus" */
 .ninjaJutsus {
-    background-color: #030630;
-    color: #ffffff;
+    background-color: BLACK;
+    color: white;
     padding: 40px 0;
 }
 
 .ninjaJutsus h3 {
     font-size: 26px;
-    color: #f7f5f4;
+    color: white;
     text-align: center;
     margin: 0 10px 20px 0;
 }
@@ -501,7 +510,7 @@ background-color: #000000;
 }
 
 .ninjaJutsus > div > div > div:last-child{
-    background-color: #e6d00b;
+    background-color: RGB(230, 208, 11);
 }
 .ninjaJutsus p {
     font-size: 16px;
@@ -517,7 +526,8 @@ background-color: #000000;
 }
 
 .ninjaJutsus img:hover {
-    transform: scale(1.1); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    transform: scale(1.1);
+     /*memoria de utilização: Aumenta ligeiramente a imagem ao passar o mouse */
 }
 
 .ninjaJutsus div {
