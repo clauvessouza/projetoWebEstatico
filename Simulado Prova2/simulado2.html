@@ -1,0 +1,749 @@
+Skip to content
+Navigation Menu
+lcostaju
+/
+lcostaju.github.io
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Commit
+simulado2
+ main
+@lcostaju
+lcostaju committed 26 minutes ago 
+1 parent 88f9f8d
+commit f681f70
+ 
+Showing 22 changed files with 571 additions and 14 deletions.
+Filter changed files
+ 3 changes: 3 additions & 0 deletions3  
+20240905_simulado/Link do vídeo mostrando a solução.txt
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,3 @@
+Link do vídeo mostrando o passo a passo para construção da página:
+
+https://youtu.be/fJdcbIzcbwg
+ Binary file addedBIN +180 KB 
+20240905_simulado/Link do vídeo mostrando a solução.zip
+Binary file not shown.
+ Binary file addedBIN +181 KB 
+20240905_simulado/Simulado.rar
+Binary file not shown.
+ 102 changes: 102 additions & 0 deletions102  
+20240905_simulado/Solução 2/css/styles.css
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,102 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+    background-color: rgb(66, 66, 66);
+}
+header nav {
+    background-color: rgb(14, 14, 135);
+    list-style: none;
+    border-bottom: 5px solid yellow;
+}
+header ul {
+    text-align: center;
+}
+header ul li {
+    display: inline-block;
+}
+header nav a:link, header nav a:visited {
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+header nav a:hover {
+    background-color: yellow;
+    color:black;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.container > div {
+    width:100%;
+    padding: 20px;
+}
+.faleconosco h2 {
+    color: orange;
+}
+section {
+    background-color: white;
+    width: 1200px;
+    margin:auto;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+section p {
+    text-align: justify;
+    margin: 15px 0px;
+}
+.introducao img {
+    width:100%;
+}
+.introducao h1 {
+    color: red;
+}
+.celulares {
+    text-align: center;
+}
+.celulares h2 {
+    color:blue;
+}
+.celulares h2:hover {
+    color: red;
+    cursor: pointer;
+}
+.sobrenos img {
+    width: 70%;
+}
+.sobrenos a:link, .sobrenos a:visited {
+    color: blue;
+}
+.sobrenos ul li {
+    margin: 10px 0px;
+}
+section button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+}
+section button:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+    color: black;
+}
+section summary {
+    text-align: left;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    background-color: black;
+}
+footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+ Binary file addedBIN +55.6 KB 
+20240905_simulado/Solução 2/img/logos.png
+Loading
+ Binary file addedBIN +22.2 KB 
+20240905_simulado/Solução 2/img/portfolio01.jpg
+Loading
+ Binary file addedBIN +4.13 KB 
+20240905_simulado/Solução 2/img/portfolio02.jpg
+Loading
+ Binary file addedBIN +15.1 KB 
+20240905_simulado/Solução 2/img/portfolio03.jpg
+Loading
+ Binary file addedBIN +61.7 KB 
+20240905_simulado/Solução 2/img/portfolio04.jpg
+Loading
+ Binary file addedBIN +21.2 KB 
+20240905_simulado/Solução 2/img/whats.png
+Loading
+ 119 changes: 119 additions & 0 deletions119  
+20240905_simulado/Solução 2/index.html
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#introducao">Manutenção</a></li>
+                <li><a href="#celulares">Celulares</a></li>
+                <li><a href="#sobrenos">Sobre nós</a></li>
+                <li><a href="#faleconosco">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao" id="introducao">
+            <div class="container">
+                <div>
+                    <img src="img/logos.png" alt="">
+                </div>
+                <div>
+                    <h1>Memphix - Manutenção de celulares</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam eos eum veniam porro ea, facilis laudantium. Rem, officia praesentium! Magni, consectetur. Quisquam molestiae assumenda et labore id doloribus quam.
+                    Voluptatibus qui eum esse, vel repellat accusamus quaerat recusandae porro odio ipsam. Voluptates porro aperiam ipsum id doloremque neque quod ullam, eligendi corporis modi nobis commodi ducimus mollitia, deleniti debitis?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="celulares" id="celulares">
+            <div class="container">
+                <div>
+                    <h2>Celular 1</h2>
+                    <img src="img/portfolio01.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum, vero corporis natus. Nihil blanditiis obcaecati qui!
+                    Totam eum perferendis harum fugiat ipsum nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+
+                <div>
+                    <h2>Celular 2</h2>
+                    <img src="img/portfolio02.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum, vero corporis natus. Nihil blanditiis obcaecati qui!
+                    Totam eum perferendis harum fugiat ipsum nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+
+                <div>
+                    <h2>Celular 3</h2>
+                    <img src="img/portfolio03.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum, vero corporis natus. Nihil blanditiis obcaecati qui!
+                    Totam eum perferendis harum fugiat ipsum nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+
+                <div>
+                    <h2>Celular 4</h2>
+                    <img src="img/portfolio04.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum, vero corporis natus. Nihil blanditiis obcaecati qui!
+                    Totam eum perferendis harum fugiat ipsum nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobrenos" id="sobrenos">
+            <div class="container">
+                <div>
+                    <img src="img/whats.png" alt="">
+                </div>
+                <div>
+                    <h2>Sobre nós</h2>
+                    <ul>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="http://www.google.com" target="_blank">Clique aqui para pesquisar no Google</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam obcaecati ea minima dolor est iure aspernatur maiores, molestias quam, pariatur dolorem. Officia consequatur voluptate atque harum, fugit corporis sit! Eius, dolor delectus voluptate earum voluptas eum ipsum modi repellat, saepe nobis sit officiis.</p>
+                    <button>Envie uma mensagem</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faleconosco" id="faleconosco">
+            <h2>Fale conosco</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste rem distinctio voluptas corporis, nisi reiciendis explicabo deserunt, velit incidunt quod facere quaerat labore laborum tempora consequuntur adipisci ea commodi.
+            Repellat rerum aperiam quae nisi quasi ipsum sapiente, hic similique obcaecati error quas. Repellat quisquam porro sint. Doloremque eum reiciendis dolore possimus, error alias quia quam beatae officiis, enim ipsum.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.967713010277!2d-48.282645323880566!3d-18.93282320803503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e28f2d7a11%3A0x8fa16020966235f9!2sInstituto%20Federal%20do%20Tri%C3%A2ngulo%20Mineiro%20-%20Campus%20Uberl%C3%A2ndia%20Centro!5e0!3m2!1spt-BR!2sbr!4v1725557136737!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+ 127 changes: 127 additions & 0 deletions127  
+20240905_simulado/css/style.css
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,127 @@
+/* Configuração Global */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(12, 12, 149);
+    border-bottom: 5px solid yellow;
+}
+
+nav{
+    margin: auto;
+    /* border: 2px solid white; */
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav > ul{
+    margin: auto;
+    width: 600px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav > ul > li{
+    /* border: 2px solid black; */
+    width: 20%;
+    height: 60px;
+    display: flex;
+}
+
+nav li > a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+nav li > a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+main > section{
+    background-color: white;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+main{
+    background-color: black;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.container>div{
+    width: 100%;
+    padding: 20px;
+
+}
+
+section p {
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+.apresentacao > .container img{
+    width: 100%;
+}
+
+.apresentacao h1{
+    color: orangered;
+    font-weight: bold;
+}
+.celulares {
+    text-align: center;
+}
+.celulares h2{
+
+    text-align: center;
+    color: blue;
+    font-size: large;
+}
+
+.celulares h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+summary{
+    color: orangered;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sobreNos img{
+    width: 70%;
+}
+.sobreNos button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.sobreNos button:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+
+.sobreNos li{
+    padding: 5px;
+}
+
+
+ Binary file addedBIN +55.6 KB 
+20240905_simulado/img/logos.png
+Loading
+ Binary file addedBIN +22.2 KB 
+20240905_simulado/img/portfolio01.jpg
+Loading
+ Binary file addedBIN +4.13 KB 
+20240905_simulado/img/portfolio02.jpg
+Loading
+ Binary file addedBIN +15.1 KB 
+20240905_simulado/img/portfolio03.jpg
+Loading
+ Binary file addedBIN +61.7 KB 
+20240905_simulado/img/portfolio04.jpg
+Loading
+ Binary file addedBIN +21.2 KB 
+20240905_simulado/img/whats.png
+Loading
+ 147 changes: 147 additions & 0 deletions147  
+20240905_simulado/index.html
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Manutenção</a></li>
+                <li><a href="">Celulares</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="apresentacao">
+            <div class="container">
+                <div><img src="img/logos.png" alt=""></div>
+                <div>
+                    <h1>Memphix - Manutenção de celulares</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam eos eum veniam porro
+                        ea, facilis laudantium. Rem, officia praesentium! Magni, consectetur. Quisquam molestiae
+                        assumenda et labore id doloribus quam. Voluptatibus qui eum esse, vel repellat accusamus quaerat
+                        recusandae porro odio ipsam. Voluptates porro aperiam ipsum id doloremque neque quod ullam,
+                        eligendi corporis modi nobis commodi ducimus mollitia, deleniti debitis?</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="celulares">
+            <div class="container">
+                <div>
+                    <h2>Celular 1</h2>
+                    <img src="img/portfolio01.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita
+                        aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum,
+                        vero corporis natus. Nihil blanditiis obcaecati qui! Totam eum perferendis harum fugiat ipsum
+                        nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis
+                        corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum
+                            architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati
+                            voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+                <div>
+                    <h2>Celular 2</h2>
+                    <img src="img/portfolio02.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita
+                        aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum,
+                        vero corporis natus. Nihil blanditiis obcaecati qui! Totam eum perferendis harum fugiat ipsum
+                        nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis
+                        corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum
+                            architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati
+                            voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+                <div>
+                    <h2>Celular 3</h2>
+                    <img src="img/portfolio03.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita
+                        aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum,
+                        vero corporis natus. Nihil blanditiis obcaecati qui! Totam eum perferendis harum fugiat ipsum
+                        nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis
+                        corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum
+                            architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati
+                            voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+                <div>
+                    <h2>Celular 4</h2>
+                    <img src="img/portfolio04.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor corrupti expedita
+                        aspernatur assumenda temporibus velit in possimus recusandae labore sapiente, culpa voluptatum,
+                        vero corporis natus. Nihil blanditiis obcaecati qui! Totam eum perferendis harum fugiat ipsum
+                        nihil ipsa nulla qui dolor cumque nam, facere in rerum illo voluptatum distinctio ab omnis
+                        corporis maxime eveniet! Deserunt assumenda vero magnam sequi quasi.</p>
+                    <details>
+                        <summary>Leia mais</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nisi consequuntur voluptatum
+                            architecto id atque aliquid ea quam deserunt unde officiis, saepe perferendis obcaecati
+                            voluptates quae nulla porro modi ratione!</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobreNos">
+            <div class="container">
+                <div><img src="img/whats.png" alt=""></div>
+                <div>
+                    <h2>Sobre nós</h2>
+                    <ul>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para pesquisar no Google</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                        <li><a href="">Clique aqui para falar no Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam obcaecati ea minima dolor est
+                        iure aspernatur maiores, molestias quam, pariatur dolorem. Officia consequatur voluptate atque
+                        harum, fugit corporis sit! Eius, dolor delectus voluptate earum voluptas eum ipsum modi
+                        repellat, saepe nobis sit officiis.</p>
+                    <button>Envie uma mensagem</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faleConosco">
+
+            <h2>Fale Conosco</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste rem distinctio voluptas corporis,
+                nisi reiciendis explicabo deserunt, velit incidunt quod facere quaerat labore laborum tempora
+                consequuntur adipisci ea commodi. Repellat rerum aperiam quae nisi quasi ipsum sapiente, hic similique
+                obcaecati error quas. Repellat quisquam porro sint. Doloremque eum reiciendis dolore possimus, error
+                alias quia quam beatae officiis, enim ipsum.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.967713010277!2d-48.282645323880566!3d-18.93282320803503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e28f2d7a11%3A0x8fa16020966235f9!2sInstituto%20Federal%20do%20Tri%C3%A2ngulo%20Mineiro%20-%20Campus%20Uberl%C3%A2ndia%20Centro!5e0!3m2!1spt-BR!2sbr!4v1725557136737!5m2!1spt-BR!2sbr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+ 70 changes: 60 additions & 10 deletions70  
+ProjetoFinal/css/style.css
+Original file line number	Diff line number	Diff line change
+@@ -1,47 +1,97 @@
+/* Configuração Global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: rgb(255, 68, 0);
+    background-color: black;
+}
+.opNav{
+    /* background-image: url('../img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png'); */
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-y:center;
+    background-position-x: 15px;
+}
+.opHome{
+    background-image: url('../img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
+
+}
+.navBar{
+    border: 1px solid green;
+    /* border: 1px solid green; */
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: auto;
+    /* height: 50px; */
+}
+
+.navBar h1{
+    color: beige;
+    /* border: 2px solid white; */
+    font-family: "Racing Sans One", sans-serif;
+    width: 60%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+
+}
+
+
+.navBar > ul{
+    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin: auto; */
+    width: 300px;
+    width: 40%;
+}
+
+.navBar > ul > li{
+    border: 2px solid black;
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    width: 25%;
+}
+
+.navBar a{
+    margin: 2px;
+    border: 1px solid rgb(194, 17, 17);
+    margin: 5px;
+    /* border: 1px solid rgb(194, 17, 17); */
+    color: beige;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+nav a:hover{
+    background-color: rgba(128, 128, 128, 0.232);
+}
+    background-color: rgba(128, 128, 128, 0.362);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer h1{
+    /* border: 2px solid white;     */
+    padding: 20px;
+    text-align: center;
+    font-family: "Racing Sans One", sans-serif;
+    color: beige;
+}
+
+footer p:nth-of-type(1){
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+ Binary file addedBIN +1.58 KB 
+ProjetoFinal/img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png
+Loading
+  17 changes: 13 additions & 4 deletions17  
+ProjetoFinal/index.html
+Original file line number	Diff line number	Diff line change
+@@ -8,15 +8,24 @@
+</head>
+<body>
+    <header>
+
+        <nav class="navBar">
+            <h1>GT Legends Motors</h1>
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a class="opNav opHome" href="">Home</a></li>
+                <li><a class="opNav" href="">Novos</a></li>
+                <li><a class="opNav" href="">Usados</a></li>
+                <li><a class="opNav" href="">Lendários</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+    <footer>
+        <h1>GT Legends Motors</h1>
+        <p>Inicia sua grande jornada</p>
+        <p>(34)3899-0000</p>
+        <p> Av. Gran Turismo, 700 - Jardim Autos - Patrocínio - MG</p>
+        <p>Todos os direitos reservados. © 2024 Lucio da Costa Junior</p>
+    </footer>
+</body>
+</html>
+0 comments on commit f681f70
+@clauvessouza
+Comment
+ 
+Leave a comment
+ 
+Loading
+Footer
+© 2024 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+simulado2 · lcostaju/lcostaju.github.io@f681f70

@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: black;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 50px;
+    margin: 15px;
+    justify-content: right;
+
+}
+
+nav ul li {
+    width: 15%;
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.4s;
+    background-position: - 80px 17px;
+
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding: auto;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    background-size: 19px 30px;
+
+}
+
+nav ul li:nth-child(1) a:hover {
+    background-image: url('../img/html5.png');
+}
+
+nav ul li:nth-child(2) a:hover {
+    background-image: url('../img/css3.png');
+}
+
+nav ul li:nth-child(3) a:hover {
+    background-image: url('../img/javascript.png');
+    padding: 12px;
+
+}
+
+.webdesign>img {
+    width: 100%;
+}
+
+.webdesign>h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+body {
+    margin: 0px;
+    font-family: verdana;
+
+}
+
+.webdesign>h2 {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.logo>.container {
+
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    margin-top: 45px;
+    padding: 30px 30px 30px;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+.logo>.container>div {
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logo>.container>div>img {
+    width: 50px;
+}
+
+.logo>.container>div>h2 {
+    color: green;
+}
+
+.carrinhoTelefone,
+.laptop,
+.telefoneCarrinho {
+    padding-top: 30px;
+    display: flex;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.carrinhoTelefone>.container>div {
+
+    text-align: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.container>div>p {
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+
+.container>div>img {
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}

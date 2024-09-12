@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+nav {
+    display: flex;
+    flex-direction: center;
+    background-color: rgb(255, 216, 145);
+    justify-content: center;
+    padding: 15px;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    color: black;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 30px;
+    margin-right: 12px;
+}
+
+
+
+.estudante {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+
+
+}
+
+.estudante>.container {
+
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    border-radius: 15px;
+    border-width: 5px;
+    padding: 20px;
+    border-color: orange;
+    width: 1200px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.estudante>.container>div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+
+}
+
+.estudante>.container>div>button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+.texto{
+text-align: center;
+}
+
+.texto >.container > div > h2{ 
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.texto >.container > div > p{
+    
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+}   
+.farol{
+    background-color: rgb(219, 210, 210);
+    display: flex;
+}
+.farol > .container {
+    display: flex;
+    flex-direction: row;
+    
+}
+.farol > .container > div{
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+.mala{
+    background-color: white;
+    display: flex;
+}
+.mala > .container{
+    display: flex;
+    flex-direction: row;
+
+}
+.mala > .container > div{
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

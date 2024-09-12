@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     /*  utilizar sempre a abertura dos trabalhos com os tres ites 
     o box-sizing ajusta as caixas conforme especificação do tamanha proposto.*/
 
-    nav{
-        background-color: rgb(10,10,109);
+    nav {
+        background-color: rgb(10, 10, 109);
         width: 100%;
         height: 10%;
         padding: 10px 0;
@@ -15,19 +15,22 @@
         left: 0;
         text-align: center;
     }
-    nav ul{
+
+    nav ul {
         list-style-type: none;
         display: flex;
-         margin: 0px;
+        margin: 0px;
         padding: 0px;
         justify-content: center;
-    /* movimenta par ao nav para centro */
+        /* movimenta par ao nav para centro */
     }
-    nav ul li{
+
+    nav ul li {
         margin: 20px 15px;
         word-spacing: 50px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 16px;
         font-weight: bold;
         text-decoration: none;
@@ -35,60 +38,71 @@
         color: white;
         display: block;
     }
-    nav ul li a:hover{
+
+    nav ul li a:hover {
         background-color: rgb(10, 10, 109);
         border-radius: 5px;
     }
-    main{
+
+    main {
         margin-top: 60px;
     }
 }
-body{
+
+body {
     background-color: black;
     font-family: Arial;
-    width:1200px;
+    width: 1200px;
     padding: 50px;
     margin: auto;
     width: 100%;
 }
-main section{
-    background-color:lightgray ;
-width: 1200px;
-/* width indica a largura d */
-margin:auto;
-/* organiza margin automaticamente */
-padding: 50px;
-/* indica  */
-word-spacing:5px;
+
+main section {
+    background-color: lightgray;
+    width: 1200px;
+    /* width indica a largura d */
+    margin: auto;
+    /* organiza margin automaticamente */
+    padding: 50px;
+    /* indica  */
+    word-spacing: 5px;
 
 
 }
-main section:nth-of-type(odd){
-    background-color:rgb(238,238,238) ;
+
+main section:nth-of-type(odd) {
+    background-color: rgb(238, 238, 238);
     /* na main utilizou nth para selecionar alternamente as cores utilizando impares(odd) e pares (even) */
 }
-main section:nth-of-type(even){
-    background-color:white ;
+
+main section:nth-of-type(even) {
+    background-color: white;
 }
-main section h1{
+
+main section h1 {
     font-size: 35px;
     text-transform: uppercase;
     /* muda as palavras para maiusculo */
 }
-main section h2{
+
+main section h2 {
     margin: 20px 0px;
 }
-main section p{
+
+main section p {
     margin: 20px 0px;
     text-align: justify;
     /* justifica o texto */
 }
-.destaque{
+
+.destaque {
     font-weight: bold;
     /* destaca os itens dentro do classe */
     font-size: 24px;
 }
-main section button{
+
+main section button {
     color: white;
     padding: 10px 20px;
     /*  neste caso organiza as dimenões envolta dos botões */
@@ -97,52 +111,77 @@ main section button{
     border: none;
 }
 
-main section button:hover{
+main section button:hover {
     background-color: red;
     cursor: pointer;
 }
-.btnpreto{
+
+.btnpreto {
     background-color: black;
 }
 
-.btnazul{
+.btnazul {
     background-color: blue;
 }
-.container{
-display: flex;
-flex-direction: row;
-}
-.container>div{
-    width: 100%;
-    padding:1px
-}
-.container>div>img{
-width: 90%;
-padding:1px 0px;
-}
-/*  destaque : atribuir tamanha das imagens utilizando  esquema do armario/ atribuir uma classe para todos as imagens */
-.container>div>p{
-    text-align:center;
-            
-    }
-    .container>div>veja+{
-        background-color: black;
-        
-    }
-.qsomos>div>button{
-    background-color:blue;
-}
-.btd1{
-    background-color:blue;
-}
-.btd2{
-    background-color: blue;
-}
-.qsomos{
+
+.container {
     display: flex;
-    }
-    
-footer{
+    flex-direction: row;
+}
+
+.container>div {
+    width: 100%;
+    padding: 1px
+}
+
+.container>div>img {
+    width: 90%;
+    padding: 1px 0px;
+}
+
+/*  destaque : atribuir tamanha das imagens utilizando  esquema do armario/ atribuir uma classe para todos as imagens */
+.container>div>p {
+    text-align: center;
+
+}
+
+.container>div> {
+    background-color: black;
+
+}
+
+.qsomos>div>button {
+    background-color: blue;
+}
+
+.btd1 {
+    background-color: blue;
+}
+
+.btd2 {
+    background-color: blue;
+}
+
+.qsomos {
+    display: flex;
+}
+
+.Meupai>h2 {
+    text-align: center;
+}
+
+.Meupai>.container>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+
+
+footer {
     background-color: black;
     padding: 40px;
     color: white;

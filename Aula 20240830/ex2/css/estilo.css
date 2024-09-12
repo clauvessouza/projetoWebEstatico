@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* celular */
+.container {
+    display: flex;
+    /* deixa a caixa livre para organizar */
+    flex-direction: column;
+    /* no flex usa-se o columm para sentido vertical e row para horizontal */
+    border: 2px solid black;
+    flex-wrap: wrap;
+    /* permite colocar a sobra na linha de baixo */
+    justify-content: center;
+    /* centralizar as caixas */
+}
+
+/* caixa organizadora */
+.introducao > div > div,
+.produtos > div > div {
+    border: 2px solid blue;
+    width: 100%;
+
+
+}
+
+/* table */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ATENÇÃO COM OS ESPAÇOS NA ESCRITA */
+
+    .introducao > div > div,
+    .produtos > div > div {
+        width: 50%;
+
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .introducao > div > div {
+        width: 25%;
+    }
+
+    .produtos >div>div {
+        width: 33.33%;
+    }
+}

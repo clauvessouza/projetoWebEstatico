@@ -1,0 +1,15 @@
+*{margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    /* celular */
+   
+    
+    /* table */
+    @media screen and (min-width:768px) and(min-width:1023px){
+
+}
+     /* desktop */
+    @media screen and (min-width:1024px){
+
+}

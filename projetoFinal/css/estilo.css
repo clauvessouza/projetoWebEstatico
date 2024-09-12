@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F47E20; /* Fundo laranja inspirado no traje de Naruto */
+    color: #FFFFFF;
+}
+
+main {
+    padding-top: 100px; /* Ajusta o valor conforme a altura do header */
+}
+
+/* Header */
+header {
+    background-color: #000000; /* Fundo preto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que o header esteja sempre acima do conteúdo */
+    box-shadow: rgb(236, 109, 4) 0 0 10px; /* Sombra branca no header */
+}
+
+header img {
+    width: 10%;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #fd0505; /* Cor de fundo no hover */
+    color: #000000; /* Cor do texto ao hover */
+    border-bottom: 3px solid rgb(0, 0, 235); /* Borda inferior vermelha */
+}
+
+/* Seções gerais */
+section {
+    padding: 20px 0;
+    
+}
+
+section > div {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Banner */
+.banner{
+    background-image: url( '../img/Capa_secao1.jpg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    border-bottom: 2px solid #fd8f00;
+}
+
+.banner > div {
+    width: 50%; /* Tamanho reduzido da div para 50% */
+    background-color: #010105d3; /* Fundo preto no banner */
+    padding: 20px;
+    border-radius: 10px; /* Pode manter para estética */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* História */
+
+.historia{
+    background-color: rgb(10, 5, 83);
+}
+.historia>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.historia > div> div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.historia img {
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.historia h1{
+    text-align: center;
+    font-size: 34px;
+    color: rgb(255, 115, 0);
+    padding: 20px 0 10px 0;
+}
+
+.historia p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.historia h2 {
+    color: rgb(255, 115, 0);
+    padding: 20px 0 10px 20px;
+
+}
+
+.historia ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.historia ul li span {
+    font-weight: bold;
+    color: rgb(255, 115, 0) /* Destaque em amarelo */
+}
+
+/* Seção Hokages */
+.hokages > div {
+    text-align: center;
+}
+
+.hokages .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hokages .container > div {
+    height: 100%;
+    border: #000000 solid 5px;
+    box-shadow: #000000 0 10px 20px;
+    background-color: #FAF6EB;
+    color: #000000;
+    width: calc(33% - 20px);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.hokages .container > div:hover {
+    transform: scale(0.9); /* Aumenta em 1.15 ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hokages h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.hokages h3 {
+    color: #64090E;
+    margin: 10px 0;
+}
+
+.hokages p {
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.hokages img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer > div> div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Espaçamento entre elementos */
+    align-items: center;
+    background-color: #000000;
+    padding: 20px 20px 0 20px;
+}
+
+footer img {
+    width: 10%;
+    padding-bottom: 80px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 5px;
+}
+#kunai:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+}
+
+#jiraya:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+}
+
+/* --------------- Akatsuki ----------------  */
+
+
+/* Estilos específicos para a página Akatsuki */
+.akatsuki {
+    background-color: #ffffff; /* Fundo escuro para a seção Akatsuki */
+    padding: 0 0 40px 0;
+}
+
+.akatsuki>div>div {
+    border-top: #f10a0a 2px dashed;
+    padding: 10px;
+}
+
+.akatsuki img {
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(100%); /* Imagem em escala de cinza */
+    transition: all 0.3s;
+}
+
+.akatsuki img:hover {
+    filter: grayscale(0); /* Remove a escala de cinza ao passar o mouse */
+}
+
+.akatsuki h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff0000; 
+    margin-top: 20px;
+
+}
+
+.akatsuki h3{
+    padding: 0 0 5px 25px;
+    text-align: center;
+    font-size: 25px;
+    color: #e60b0b;
+    margin-top: 20px;
+}
+.akatsuki p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+/* Estilos para a seção de integrantes da Akatsuki */
+.integrantesAkatsuki {
+background-color: #000000;
+    padding: 40px 0;
+}
+
+.integrantesAkatsuki>div {
+    margin-top: 30px;
+    background-image: url( '../img/akatsuki.png' );
+    background-size: 150px;
+
+
+}
+
+.integrantesAkatsuki h2 {
+    background-color: #791e1ef5;
+    text-align: center;
+    font-size: 34px;
+    color: #FFFFFF; /* Cor dourada */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.integrantesAkatsuki p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+
+
+.personagem {
+    background-color: #ffffff; /* Fundo preto para cada personagem */
+    color: #070505;
+    border: 2px solid #ff0000; /* Borda dourada */
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: calc(33% - 40px); /* 3 cards por linha */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.personagem img {
+    width: 120px;
+    margin-bottom: 10px;
+    
+}
+
+.personagem h3 {
+    font-size: 24px;
+    color: #830905;
+}
+
+.personagem b{
+    color:#64090E ;
+    border-bottom: #64090E 2px solid;
+}
+
+.personagem p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.personagem:hover {
+    transform:perspective(1000px) rotateY(10deg);
+}
+
+
+/* ---------------- ninja---------------- */
+/* Estilos para seções relacionadas a "Como Se Tornar um Ninja" */
+
+/* Seção de treinamento ninja */
+.ninjaTreinamento {
+    background-color: #4f73e9;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.ninjaTreinamento h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.ninjaTreinamento > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ninjaTreinamento p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.ninjaTreinamento img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Seção Bandana */
+.ninjaBandana {
+    background-color: #0d2e75;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.ninjaBandana > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.ninjaBandana p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.ninjaBandana img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.ninjaBandana h3, .ninjaTreinamento h3, .ninjaJutsus h3  {
+    font-size: 23px;
+    color: #f7f5f4;
+}
+
+/* Seção de aldeias */
+.aldeias {
+    background-color: #1b1b4a;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.aldeias h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.aldeias > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.aldeias > div > div:nth-child(odd) {
+    background-color: #32325d;
+    flex-direction: row-reverse;
+}
+
+.aldeias > div > div:nth-child(even) {
+    background-color: #696867;
+}
+
+.aldeias img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.aldeias h3 {
+    font-size: 24px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.aldeias p {
+    text-align: justify;
+    font-size: 16
+}
+
+/* Estilos específicos para a última seção "Jutsus" */
+.ninjaJutsus {
+    background-color: #030630;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.ninjaJutsus h3 {
+    font-size: 26px;
+    color: #f7f5f4;
+    text-align: center;
+    margin: 0 10px 20px 0;
+}
+
+.ninjaJutsus > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ninjaJutsus > div > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ninjaJutsus > div > div > div:last-child{
+    background-color: #e6d00b;
+}
+.ninjaJutsus p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.ninjaJutsus img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.ninjaJutsus img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.ninjaJutsus div {
+    text-align: center;
+}
