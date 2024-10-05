@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Tom de cinza claro para o fundo */
+    color: #333; /* Tom de cinza escuro para o texto */
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50; /* Azul escuro para os títulos */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #3498db; /* Azul padrão para os links */
+    font-size: 18px;
+    background-color: #e0e0e0; /* Cinza claro para o fundo dos itens */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block; /* Faz o link ocupar toda a área do li */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #3498db; /* Azul para hover */
+    color: #fff; /* Branco para o texto no hover */
+}
